@@ -9,7 +9,7 @@ const Body = () => {
   const {active,activeProfile,setActive, setProfile} = useLayoutContextSide();
   const {openNotify, setOpenNotify} = useLayoutContextNotification()
   return (
-    <BodyStyle style={active || activeProfile ? {  position: 'fixed', top: '0', left: '0' } : {} } arial-hidden onClick={() => {
+    <BodyStyle style={{ overflow: 'hidden'}} arial-hidden onClick={() => {
       active && setActive(false)
       activeProfile && setProfile(false)
       openNotify && setOpenNotify(false)
