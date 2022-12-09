@@ -5,7 +5,6 @@ export const SidebarStyle = styled.div`
   z-index: 99;
   width: 20rem;
   overflow-x: hidden;
-  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -14,6 +13,9 @@ export const SidebarStyle = styled.div`
   padding: 2rem 1rem;
   position: relative;
   transition: all .5s;
+  @media (max-width: 600px){
+    gap:1rem;
+  }
   .header{
     width: 100%;
     height: auto;
@@ -31,6 +33,19 @@ export const SidebarStyle = styled.div`
         justify-content: space-around;
         button{
         display: block;
+      }
+    }
+
+    @media (max-width: 390px){
+      button{
+        svg{
+          width: 20px;
+        }
+      }
+      .logo{
+        svg{
+          width: 150px;
+        }
       }
     }
   }
@@ -85,7 +100,19 @@ export const SidebarStyle = styled.div`
               }  
           }
         }
-      
+      }
+      @media (max-width: 390px){
+        gap: 1rem;
+        li{
+          .content{
+            .text{
+              font-size: 12px;
+            }
+            svg{
+              width: 25px;
+            }
+          }
+        }
       }
     }
     .container{
@@ -134,7 +161,7 @@ export const SidebarStyle = styled.div`
     }}
   }
   .footer{
-    padding: 0 1rem 3rem .5rem;
+    padding: 0 1rem 0 .5rem;
     width: 10rem;
     cursor: pointer;
     display: flex;
@@ -151,6 +178,14 @@ export const SidebarStyle = styled.div`
     :hover{
       svg{
         transform: scale(1.2);
+      }
+    }
+    @media (max-width: 390px){
+      .text{
+        font-size: 15px;
+      }
+      svg{
+        width: 25px;
       }
     }
   }
