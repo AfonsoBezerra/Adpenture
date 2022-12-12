@@ -33,6 +33,7 @@ export const HeaderStyle = styled.header`
       left: 10px;
     }
     input{
+      background-color: transparent;
       width: 100%;
       height: 100%;
       padding-left: 40px;

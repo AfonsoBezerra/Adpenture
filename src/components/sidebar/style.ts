@@ -51,7 +51,7 @@ export const SidebarStyle = styled.div`
   }
   .body{
     width: 100%;
-    height: 100%;
+    height: auto;
     ul{
       display: flex;
       flex-direction: column;
@@ -161,11 +161,13 @@ export const SidebarStyle = styled.div`
     }}
   }
   .footer{
-    padding: 0 1rem 0 .5rem;
+    padding: 0rem 1rem 0 .5rem;
     width: 10rem;
     cursor: pointer;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    height: 100%;
+
     .text{
             visibility: visible;
             opacity: 1;
