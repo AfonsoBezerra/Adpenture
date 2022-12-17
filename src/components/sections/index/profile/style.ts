@@ -5,6 +5,7 @@ export const ProfileCardStyle = styled.section`
   height: 100%;
   right: -25rem;
   position: fixed;
+  overflow: auto;
   z-index:999;
   background-color: #6E8B40;
   transition: all .5s;
@@ -207,6 +208,15 @@ export const ProfileCardStyle = styled.section`
           min-height: 90px;
       }
     }
+    .footer{
+      min-height:350px;
+      img{
+        position: relative;
+        width: 100%;
+        height: 90%;
+        object-fit: fill;
+      }
+  }
   }
   @media(max-width: 380px){
     width: 20rem;
@@ -221,13 +231,5 @@ export const ProfileCardStyle = styled.section`
           min-height: 90px;
       }
     }
-    .footer{
-      img{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-      }
-  }
   }
 `;
