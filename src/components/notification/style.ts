@@ -1,7 +1,11 @@
 import  styled  from 'styled-components';
 
 export const NotificationContainer = styled.div`
-    padding: .6rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);

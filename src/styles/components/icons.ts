@@ -13,6 +13,9 @@ import {Menu} from '@styled-icons/boxicons-regular/Menu'
 import {Notifications} from '@styled-icons/ionicons-outline/Notifications'
 import {MenuUnfold} from '@styled-icons/remix-fill/MenuUnfold'
 import {VipCrown} from '@styled-icons/remix-line/VipCrown'
+import {InformationCircle} from '@styled-icons/heroicons-outline/InformationCircle'
+import {PinOutline} from '@styled-icons/evaicons-outline/PinOutline'
+import {StarS} from '@styled-icons/remix-fill/StarS'
 
 export const HomeIcon  = styled(Home)`
   width: 30px;
@@ -120,3 +123,21 @@ export const VipCrownIcon = styled(VipCrown)`
   height: 20px;
   color: yellow;
 `
+
+export const InformationCircleIcon = styled(InformationCircle)`
+  width: 15px;
+  height: 15px;
+  color: rgba(0,0,0,.8);
+`;
+
+export const PinOutlineIcon = styled(PinOutline)`
+  width: 12px;
+  height: 12px;
+  color:#ED3D00;
+`;
+
+export const StarSIcon = styled(StarS)`
+  width: 14px;
+  height: 14px;
+  color: #FECA05;
+`;

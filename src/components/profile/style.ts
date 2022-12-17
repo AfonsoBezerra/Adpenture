@@ -13,5 +13,13 @@ export const ProfileStyle = styled.div`
     height: 50px;
     border-radius: 50%;
     background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
   }
 `;

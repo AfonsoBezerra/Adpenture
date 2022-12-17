@@ -10,6 +10,7 @@ export const HeaderStyle = styled.header`
   button{
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   .iconsButtons{
     display: flex;
@@ -27,13 +28,12 @@ export const HeaderStyle = styled.header`
     position: relative;
     display: flex;
     align-items: center;
-    
     svg{
       position: absolute;
       left: 10px;
     }
     input{
-      background-color: transparent;
+      background-color: white;
       width: 100%;
       height: 100%;
       padding-left: 40px;
@@ -49,10 +49,15 @@ export const HeaderStyle = styled.header`
   }
   }
   .menu{
-    padding: .6rem;
+    width: 44px;
+    height: 44px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    button{
+      width: 100%;
+      height: 100%;
+    }
   }
   .pushSide{
     display: none;

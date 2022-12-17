@@ -3,7 +3,9 @@ import { ProfileStyle } from "./style"
 const Profile =() => {
   return (
     <ProfileStyle>
-      <div className="img"></div>
+      <div className="img">
+       <img src="/pessoa.jpg" alt="pessoa" />
+      </div>
     </ProfileStyle>
   )
 }

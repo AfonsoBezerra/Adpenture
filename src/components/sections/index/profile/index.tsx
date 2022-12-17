@@ -1,6 +1,7 @@
-import { ArrowIcon, MenuUnfoldIcon, VipCrownIcon } from "@stylesComponents/icons";
+import { ArrowIcon, InformationCircleIcon, MenuUnfoldIcon, PinOutlineIcon, StarSIcon, VipCrownIcon } from "@stylesComponents/icons";
 import { useLayoutContextSide } from "context/SideBar";
 import { ProfileCardStyle } from "./style"
+import { BigHead } from '@bigheads/core'
 
 const ProfileCard =() => {
   const {activeProfile, setProfile} = useLayoutContextSide();
@@ -15,7 +16,9 @@ const ProfileCard =() => {
       <div className="body">
         <div className="container">
           <div className="profile">
-            <div className="circle"></div>
+            <div className="circle">
+              <img src="/pessoa.jpg" alt="pessoa" />
+            </div>
           </div>
           <div className="name">
             <h2>Afonso Bezerra</h2>
@@ -25,6 +28,31 @@ const ProfileCard =() => {
             </div>
           </div>
         </div>
+        <div className="history">
+          <div className="img">
+            <img src="/acampamento1.webp" alt="acampa 1" />
+          </div>
+          <div className="text">
+            <div className="textHeader"><InformationCircleIcon /></div>
+            <div className="textBody">
+              <div className="current">Current Travel</div>
+              <div className="title">Higth Tratas</div>
+              <div className="description">
+                <div className="localization">
+                  <PinOutlineIcon />
+                  <span>Curitiba, Brazil</span>
+                </div>
+                <div className="ratting">
+                  <StarSIcon />
+                  <span>4.6</span>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <img src="./acampa.png" alt="acampa" />
       </div>
     </ProfileCardStyle>
   )
