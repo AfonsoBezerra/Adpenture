@@ -1,9 +1,9 @@
 import styled  from 'styled-components';
 
 export const ProfileCardStyle = styled.section`
-  width: 20rem;
+  width: 25rem;
   height: 100%;
-  right: -20rem;
+  right: -25rem;
   position: fixed;
   z-index:999;
   background-color: #6E8B40;
@@ -106,7 +106,7 @@ export const ProfileCardStyle = styled.section`
     .history{
       width: 100%;
       height: auto;
-      min-height: 90px;
+      min-height: 110px;
       background-color: white;
       border-radius: 10px;
       margin-top: 25px;
@@ -194,5 +194,40 @@ export const ProfileCardStyle = styled.section`
 
   &.active{
     right: 0;
+  }
+
+  @media(max-width: 1024px){
+    width: 20rem;
+    height: 100%;
+    right: -20rem;
+      .body{
+        .history{
+          width: 100%;
+          height: auto;
+          min-height: 90px;
+      }
+    }
+  }
+  @media(max-width: 380px){
+    width: 20rem;
+    height: 100%;
+    right: -20rem;
+    gap: 1rem;
+      .body{
+        gap: .2rem;
+        .history{
+          width: 100%;
+          height: auto;
+          min-height: 90px;
+      }
+    }
+    .footer{
+      img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+  }
   }
 `;
