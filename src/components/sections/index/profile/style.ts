@@ -184,12 +184,12 @@ export const ProfileCardStyle = styled.section`
     width: 100%;
     height: 100%;
     overflow: hidden;
+    min-height:300px;
     img{
       position: relative;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      
     }
   }
 
