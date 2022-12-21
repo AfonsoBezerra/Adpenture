@@ -1,18 +1,45 @@
-import styled  from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const BodyStyle = styled.section`
+interface iBody{
+  active: boolean
+}
+
+export const BodyStyle = styled.section<iBody>`
   width:100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  position: relative;
+  padding: 0 2rem 2rem 2rem;
+  ${({active}) =>
+    active ?
+    css`
+      overflow: hidden;
+    `
+    :
+    css`
+      overflow-x: hidden;
+    `
+  }
+  
+
   .main{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     gap: 1rem;
+    .friend-map{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      gap: 1rem;
+    }
     @media (min-width: 600px){
-      margin-top: 3rem;
+      margin-top: 2rem;
+      gap: 2rem;
     }
   }
 `;

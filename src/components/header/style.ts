@@ -3,9 +3,14 @@ import styled  from 'styled-components';
 export const HeaderStyle = styled.header`
   width: 100%;
   height: auto;
+  padding: 2rem 0 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top:0;
+  z-index: 8;
+  background-color: rgba(240, 240, 240, .8);
   button{
     background-color: transparent;
     border: none;

@@ -1,5 +1,9 @@
+import { BoxFriendsStyle } from "./style"
+
 const BoxFriends = () =>  {
-  return <h1>a</h1>
+  return (
+    <BoxFriendsStyle />
+  )
 }
 
 export default BoxFriends 

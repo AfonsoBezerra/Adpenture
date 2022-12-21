@@ -18,7 +18,7 @@ export const ContainerStyle = styled.div<iContainer>`
       }
       img{
         position: relative;
-        z-index: 2;
+        z-index: 1;
         transform: translateY(3%);
         width:100%
       }

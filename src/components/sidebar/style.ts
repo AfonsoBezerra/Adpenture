@@ -4,7 +4,6 @@ export const SidebarStyle = styled.div`
   position: fixed;
   z-index: 99;
   width: 20rem;
-  overflow-x: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;

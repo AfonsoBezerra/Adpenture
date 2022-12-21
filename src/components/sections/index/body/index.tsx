@@ -1,5 +1,7 @@
 
+import BoxFriends from "@components/boxFriends"
 import CarrosselDestination from "@components/carroselDestination"
+import EventBox from "@components/eventBox"
 import Header from "@components/header"
 import StartContainer from "@components/startAdventury"
 import { useLayoutContextNotification } from "context/notification"
@@ -11,7 +13,7 @@ const Body = () => {
   const {active,activeProfile,setActive, setProfile} = useLayoutContextSide();
   const {openNotify, setOpenNotify} = useLayoutContextNotification()
   return (
-    <BodyStyle style={{ overflow: 'hidden'}} arial-hidden onClick={() => {
+    <BodyStyle active={active || activeProfile} arial-hidden onClick={() => {
       active && setActive(false)
       activeProfile && setProfile(false)
       openNotify && setOpenNotify(false)
@@ -20,6 +22,10 @@ const Body = () => {
       <section className="main">
         <StartContainer  isSideBar={false}/>
         <CarrosselDestination />
+        <div className="friend-map">
+          <BoxFriends />
+          <EventBox />
+        </div>
       </section>
     </BodyStyle>
   )
