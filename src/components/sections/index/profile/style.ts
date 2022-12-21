@@ -11,6 +11,7 @@ export const ProfileCardStyle = styled.section`
   transition: all .5s;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
   gap: 3rem;
   .header{
     display: flex;
@@ -148,7 +149,7 @@ export const ProfileCardStyle = styled.section`
             color: rgba(0,0,0,.7);
           }
           .title{
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 700;
             color: rgba(0,0,0,.9);
           }

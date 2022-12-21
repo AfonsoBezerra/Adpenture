@@ -8,11 +8,12 @@ export const SidebarStyle = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap:2rem;
+  justify-content: space-between;
   border-right: 2px solid rgba(0,0,0,0.1);
   padding: 2rem 1rem;
   position: relative;
   transition: all .5s;
+  gap: 2rem;
   @media (max-width: 600px){
     gap:1rem;
   }
@@ -56,7 +57,7 @@ export const SidebarStyle = styled.div`
       display: flex;
       flex-direction: column;
       padding: 0 1rem 3rem 1rem;
-      gap: 2rem;
+      gap:2.5rem;
       li{
         cursor: pointer;
         list-style: none;
@@ -74,7 +75,7 @@ export const SidebarStyle = styled.div`
             visibility: visible;
             opacity: 1;
             margin-left: 1rem;
-            font-size: 15px;
+            font-size: 17px;
             color: rgba(0,0,0,0.4);
             transition: all .5s;
             font-weight: 500;
@@ -106,7 +107,7 @@ export const SidebarStyle = styled.div`
         li{
           .content{
             .text{
-              font-size: 12px;
+              font-size: 15px;
             }
             svg{
               width: 25px;
@@ -115,8 +116,9 @@ export const SidebarStyle = styled.div`
         }
       }
     }
-    .container{
-      overflow: hidden;
+  }
+  .container{
+      height: auto;
       img{
         position: relative;
         z-index: 5;
@@ -159,20 +161,18 @@ export const SidebarStyle = styled.div`
         }
       }
     }}
-  }
   .footer{
     padding: 0rem 1rem 0 .5rem;
     width: 10rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
-    height: 100%;
 
     .text{
             visibility: visible;
             opacity: 1;
             margin-left: 1rem;
-            font-size: 16px;
+            font-size: 17px;
             color: rgba(211,0,0,0.8);
             transition: all .5s;
             font-weight: 500;

@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { LayoutProvider } from 'context/layout'
 import { LayoutProviderNotification } from 'context/notification'
+import 'swiper/css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

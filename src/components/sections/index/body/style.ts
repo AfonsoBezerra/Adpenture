@@ -5,4 +5,10 @@ export const BodyStyle = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 `;

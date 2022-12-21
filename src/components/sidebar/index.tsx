@@ -37,6 +37,7 @@ const Sidebar = () => {
           })
         }
       </ul>
+    </div>
       <div className="container">
         <img src="./barraca.png" alt="barraca" />
         <div className="start">
@@ -47,7 +48,6 @@ const Sidebar = () => {
           <button type="button"><RightArrowAltIcon /></button>
         </div>
       </div>
-    </div>
     <div className="footer">
       <LogOutIcon />
       <span className="text">Logout</span>

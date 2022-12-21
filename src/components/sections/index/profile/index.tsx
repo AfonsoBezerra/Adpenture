@@ -30,7 +30,7 @@ const ProfileCard =() => {
         </div>
         <div className="history">
           <div className="img">
-            <img src="/acampamento1.webp" alt="acampa 1" />
+            <img src="/acampamento1.png" alt="acampa 1" />
           </div>
           <div className="text">
             <div className="textHeader"><InformationCircleIcon /></div>

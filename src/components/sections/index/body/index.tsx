@@ -1,4 +1,5 @@
 
+import CarrosselDestination from "@components/carroselDestination"
 import Header from "@components/header"
 import { useLayoutContextNotification } from "context/notification"
 import { useLayoutContextSide } from "context/SideBar"
@@ -15,6 +16,9 @@ const Body = () => {
       openNotify && setOpenNotify(false)
     }}>
       <Header />
+      <section className="main">
+        <CarrosselDestination />
+      </section>
     </BodyStyle>
   )
 }
