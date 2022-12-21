@@ -6,6 +6,7 @@ import { SidebarStyle } from "./style";
 import { useLayoutContextSide } from "context/SideBar";
 import { useLayoutContextNotification } from "context/notification";
 import { useRouter } from "next/router";
+import StartContainer from "@components/startAdventury";
 
 const Sidebar = () => {
   const {active,setActive} = useLayoutContextSide();
@@ -38,16 +39,7 @@ const Sidebar = () => {
         }
       </ul>
     </div>
-      <div className="container">
-        <img src="./barraca.png" alt="barraca" />
-        <div className="start">
-          <div className="text">
-            Start your Adventure
-            <span>Create Adventure with your friends</span>
-          </div>
-          <button type="button"><RightArrowAltIcon /></button>
-        </div>
-      </div>
+    <StartContainer  isSideBar={true}/>
     <div className="footer">
       <LogOutIcon />
       <span className="text">Logout</span>

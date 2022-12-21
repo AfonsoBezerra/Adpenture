@@ -88,6 +88,7 @@ export const NotificationContainer = styled.div`
       }
       &.active{
         display: block;
+        z-index: 99999;
       }
     }
 `

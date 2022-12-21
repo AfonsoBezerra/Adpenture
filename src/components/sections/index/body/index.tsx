@@ -1,6 +1,7 @@
 
 import CarrosselDestination from "@components/carroselDestination"
 import Header from "@components/header"
+import StartContainer from "@components/startAdventury"
 import { useLayoutContextNotification } from "context/notification"
 import { useLayoutContextSide } from "context/SideBar"
 import { useContext } from "react"
@@ -17,6 +18,7 @@ const Body = () => {
     }}>
       <Header />
       <section className="main">
+        <StartContainer  isSideBar={false}/>
         <CarrosselDestination />
       </section>
     </BodyStyle>

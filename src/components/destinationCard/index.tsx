@@ -15,11 +15,11 @@ const DestinationCard = ({title, localization, ratting,image} : DestinationProps
         <div className="image">
           <Image src={image} 
             alt="image" 
-            width={200} 
-            height={200}  
+            width={1080} 
+            height={720}  
             blurDataURL={image}
             placeholder="blur"
-            >
+          >
           </Image>
         </div>
         <div className="description">

@@ -9,6 +9,10 @@ export const BodyStyle = styled.section`
   .main{
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    @media (min-width: 600px){
+      margin-top: 3rem;
+    }
   }
 `;
