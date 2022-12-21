@@ -1,7 +1,6 @@
 import { ArrowIcon, InformationCircleIcon, MenuUnfoldIcon, PinOutlineIcon, StarSIcon, VipCrownIcon } from "@stylesComponents/icons";
 import { useLayoutContextSide } from "context/SideBar";
 import { ProfileCardStyle } from "./style"
-import { BigHead } from '@bigheads/core'
 
 const ProfileCard =() => {
   const {activeProfile, setProfile} = useLayoutContextSide();
