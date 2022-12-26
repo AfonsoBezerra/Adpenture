@@ -10,7 +10,7 @@ export const HeaderStyle = styled.header`
   position: sticky;
   top:0;
   z-index: 8;
-  background-color: rgba(240, 240, 240, .8);
+  background-color: #dbdbdb80;
   backdrop-filter: blur(3px);
 
   button{

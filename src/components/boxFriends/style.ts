@@ -2,8 +2,45 @@ import styled from "styled-components";
 
 export const BoxFriendsStyle = styled.div`
   width: 60%;
-  height: 100%;
+  height:100%;
   padding: 2rem;
   background-color: white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 18px;
+      padding:0;
+    }
+    h5{
+      margin: 0;
+      padding: 0;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: rgba(0,0,0,.4);
+      span{
+        color: #FECA05;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  .body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 1023px){
+      width: 100%;
+  }
 `;

@@ -7,7 +7,7 @@ export const defaultTheme: iTheme  ={
     primary: 'Poppins, sans-serif'
   },
   colors:{
-    primary: '#f0f0f0',
+    primary:'#dbdbdb',
     background: 'red',
   }
 }
