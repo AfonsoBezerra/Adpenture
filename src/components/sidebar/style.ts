@@ -13,6 +13,7 @@ export const SidebarStyle = styled.div`
   position: relative;
   transition: all .5s;
   gap: 2rem;
+  overflow: auto;
   @media (max-width: 600px){
     gap:1rem;
   }
@@ -167,7 +168,7 @@ export const SidebarStyle = styled.div`
     }
   } */
 
-  @media (max-width: 1360px){
+  @media (max-width: 1359px){
     left: -20rem;
     &.active{
       left: 0;

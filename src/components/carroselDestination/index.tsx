@@ -8,6 +8,7 @@ const CarrosselDestination = () => {
     <CarrosselDestinationStyle>
       <Swiper
         slidesPerView={1.4}
+        grabCursor={true}
         breakpoints={
           {
             2000: {
@@ -16,14 +17,17 @@ const CarrosselDestination = () => {
             1800: {
               slidesPerView: 5.5
             },
-            1300: {
+            1359: {
               slidesPerView: 4.5
             },
+            1300: {
+              slidesPerView: 5.5
+            },
             1024: {
-              slidesPerView: 3.5
+              slidesPerView: 4.5
             },
             768: {
-              slidesPerView: 2.5
+              slidesPerView: 3.5
             },
           }
         }
