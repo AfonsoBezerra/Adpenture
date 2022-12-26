@@ -3,7 +3,7 @@ import styled  from 'styled-components';
 export const HeaderStyle = styled.header`
   width: 100%;
   height: auto;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 2rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,8 @@ export const HeaderStyle = styled.header`
   top:0;
   z-index: 8;
   background-color: rgba(240, 240, 240, .8);
+  backdrop-filter: blur(3px);
+
   button{
     background-color: transparent;
     border: none;

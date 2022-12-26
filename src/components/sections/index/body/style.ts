@@ -10,7 +10,6 @@ export const BodyStyle = styled.section<iBody>`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 2rem 2rem 2rem;
   ${({active}) =>
     active ?
     css`
@@ -29,6 +28,7 @@ export const BodyStyle = styled.section<iBody>`
   .main{
     width: 100%;
     height: 100%;
+    padding: 0 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
