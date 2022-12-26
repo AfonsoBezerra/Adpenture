@@ -31,7 +31,6 @@ const CarrosselDestination = () => {
             },
           }
         }
-        spaceBetween={30}
         className="mySwiper"
       >
         {DestinationMock.map(cards => (

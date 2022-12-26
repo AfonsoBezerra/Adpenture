@@ -33,7 +33,7 @@ const Header = () => {
           setProfile((prev: any) => !prev)
           active && setActive(false)
           }}>
-          <Profile />
+          <Profile width="50px" color="#FECA05" imgPath="./pessoa.jpg"/>
         </button>
     </div>
   </HeaderStyle>

@@ -10,6 +10,7 @@ export const DestinationCardStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  margin:  0 16px;
   .image{
     width: 100%;
     height: 80%;

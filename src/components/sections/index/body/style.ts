@@ -28,7 +28,7 @@ export const BodyStyle = styled.section<iBody>`
   .main{
     width: 100%;
     height: 100%;
-    padding: 0 2rem 2rem 2rem;
+    /* padding: 0 2rem 2rem 2rem; */
     display: flex;
     flex-direction: column;
     margin-top: 1rem;

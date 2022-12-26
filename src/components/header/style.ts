@@ -3,7 +3,7 @@ import styled  from 'styled-components';
 export const HeaderStyle = styled.header`
   width: 100%;
   height: auto;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 1rem 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +67,7 @@ export const HeaderStyle = styled.header`
   }
   .pushSide{
     display: none;
-    @media (max-width: 1360px){
+    @media (max-width: 1359px){
       display: block;
     }
   }

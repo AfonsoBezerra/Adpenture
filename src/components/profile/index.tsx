@@ -1,10 +1,16 @@
 import { ProfileStyle } from "./style"
 
-const Profile =() => {
+interface ProfileProps{
+  width: string;
+  imgPath: string;
+  color: string
+}
+
+const Profile =({imgPath, width, color}: ProfileProps) => {
   return (
-    <ProfileStyle>
+    <ProfileStyle componetSize={width} componentColor={color}>
       <div className="img">
-       <img src="/pessoa.jpg" alt="pessoa" />
+       <img src={imgPath} alt="pessoa" />
       </div>
     </ProfileStyle>
   )

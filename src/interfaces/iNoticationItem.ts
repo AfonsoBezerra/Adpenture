@@ -3,4 +3,5 @@ export interface iNotificationItem {
     title: string,
     subtitle: string,
     link: string,
+    img: string
 }

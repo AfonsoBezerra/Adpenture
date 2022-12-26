@@ -27,8 +27,8 @@ export const NotificationContainer = styled.div`
     .container{
       position: absolute;
       padding: 1rem;
-      max-width: 280px;
-      width: 280px;
+      max-width: 240px;
+      width: 240px;
       height: auto;
       display: none;
       background-color:  white;
@@ -56,16 +56,19 @@ export const NotificationContainer = styled.div`
         height: auto;
         li{
           display: flex;
-          justify-content: space-between;
+          align-items: center;
           a{
             font-size: 10px;  
             text-decoration: none;
             color: rgba(0,0,0,0.8)
           }
+          .imgProfile{
+
+          }
           .title{
             display: flex;
             flex-direction: column;
-            gap: .2rem;
+            margin-left: .5rem;
             h2{
               font-size: 12px;
               font-weight: 700;

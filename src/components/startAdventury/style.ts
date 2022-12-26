@@ -13,6 +13,7 @@ export const ContainerStyle = styled.div<iContainer>`
         css`
           background-color: white;
           padding: 1rem;
+          margin: 0 1rem;
           border-radius: 15px;
         `
       }

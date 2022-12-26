@@ -1,3 +1,4 @@
+import Profile from "@components/profile";
 import { NotificationsIcon } from "@stylesComponents/icons"
 import { useLayoutContextNotification } from "context/notification/useLayoutContext"
 import { noticationMock } from "mock/notications";
@@ -20,6 +21,7 @@ const Notication =() => {
             <ul>
               {noticationMock.map(notify => (
                 <li key={notify.id}>
+                  <Profile width="30px" color="#FECA05" imgPath={notify.img}/>
                   <div className="title">
                     <h2>{notify.title}</h2>
                     <h5>{notify.subtitle}</h5>
