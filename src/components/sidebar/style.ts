@@ -30,7 +30,7 @@ export const SidebarStyle = styled.div`
         color: rgba(0,0,0,0.5);
       }
     }
-    @media (max-width: 1360px){
+    @media (max-width: 1359px){
         justify-content: space-around;
         button{
         display: block;

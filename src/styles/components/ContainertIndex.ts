@@ -5,7 +5,7 @@ export const ContainerIndex = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 20rem auto;
-  @media (max-width: 1360px){
+  @media (max-width: 1359px){
     grid-template-columns: 0 auto;
   }
 `

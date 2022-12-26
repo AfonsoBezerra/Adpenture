@@ -17,7 +17,7 @@ const CarrosselDestination = () => {
             1800: {
               slidesPerView: 5.5
             },
-            1359: {
+            1358: {
               slidesPerView: 4.5
             },
             1300: {
