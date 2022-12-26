@@ -40,6 +40,7 @@ export const BodyStyle = styled.section<iBody>`
       display: flex;
       gap: 1rem;
       @media (max-width: 1023px){
+        flex-direction: column;
         justify-content: space-between
       }
     }

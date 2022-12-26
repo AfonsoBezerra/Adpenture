@@ -25,7 +25,11 @@ export const BoxFriendsStyle = styled.div`
       padding: 0;
       letter-spacing: 1px;
       font-weight: 400;
+      font-size: 13px;
       color: rgba(0,0,0,.4);
+      @media (max-width:600px){
+          font-size: 11px;
+      }
       span{
         color: #FECA05;
         letter-spacing: 0;

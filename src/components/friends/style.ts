@@ -23,6 +23,9 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
                 padding: 0;
                 font-size: 15px;
                 font-weight: 500;
+                @media (max-width:600px){
+                    font-size: 13px;
+                }
             }  
             .subtitle{
                 display: flex;
@@ -32,6 +35,9 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
                     color: rgba(0,0,0,.4);
                     font-size: 13px;
                     margin-right: .2rem;
+                    @media (max-width:600px){
+                        font-size: 11px;
+                    }
                 }     
             }
         }
@@ -54,6 +60,7 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
                     css`
                         background-color: #FECA05;
                         cursor: pointer;
+                        color: black;
                    `
             }
             h3{
