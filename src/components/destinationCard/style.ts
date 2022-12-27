@@ -75,4 +75,7 @@ export const DestinationCardStyle = styled.div`
       }
     }
   }
+  @media(min-width: 1700px){
+    height: 350px;
+  }
 `

@@ -15,9 +15,6 @@ export const BodyStyle = styled.section<iBody>`
     active ?
     css`
       overflow: hidden;
-      @media (min-width: 1024px){
-        padding-right: 2.98rem;
-      }
     `
     :
     css`
@@ -45,7 +42,7 @@ export const BodyStyle = styled.section<iBody>`
       }
     }
     @media (min-width: 600px){
-      margin-top: 2rem;
+      margin-top: 1rem;
       gap: 2rem;
     }
   }
