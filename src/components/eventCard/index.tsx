@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { PinOutlineIcon, StarSIcon } from "@stylesComponents/icons"
+import { AddIcon, PinOutlineIcon, StarSIcon } from "@stylesComponents/icons"
 import { EventCardStyle } from "./style"
 import { iDestination } from 'interfaces/iDestination';
 import { iFriends } from 'interfaces/iFriends';
@@ -44,6 +44,7 @@ const EventCard = ({title, local, friends,image} : EventProps) =>{
             </div>
           </div>
         </div>
+        <button className='enterEvent'><AddIcon /> details</button>
       </EventCardStyle>
     )
 }

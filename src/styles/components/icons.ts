@@ -16,7 +16,8 @@ import {VipCrown} from '@styled-icons/remix-line/VipCrown'
 import {InformationCircle} from '@styled-icons/heroicons-outline/InformationCircle'
 import {PinOutline} from '@styled-icons/evaicons-outline/PinOutline'
 import {StarS} from '@styled-icons/remix-fill/StarS'
-
+import {Add} from '@styled-icons/fluentui-system-filled/Add'
+ 
 export const HomeIcon  = styled(Home)`
   width: 30px;
   height: 30px;
@@ -140,4 +141,11 @@ export const StarSIcon = styled(StarS)`
   width: 14px;
   height: 14px;
   color: #FECA05;
+`;
+
+export const AddIcon = styled(Add)`
+  width: 14px;
+  height: 14px;
+  color: black;
+  margin-right: .5rem;
 `;

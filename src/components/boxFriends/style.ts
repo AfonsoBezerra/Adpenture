@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const BoxFriendsStyle = styled.div`
   width: 100%;
-  height: 50%;
   overflow: auto;
   padding: 2rem;
   background-color: white;
@@ -22,9 +21,7 @@ export const BoxFriendsStyle = styled.div`
     background-color: rgba(0,0,0,0.3);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
-  @media (max-width: 1440px){
-    height: fit-content;
-  }
+
   .header{
     display: flex;
     flex-direction: row;

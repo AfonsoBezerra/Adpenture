@@ -71,6 +71,27 @@ export const EventCardStyle = styled.div`
       }
     }
   }
+  .enterEvent{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #FECA05;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: all .5s;
+    :hover{
+      background-color: #FECA0585;
+      color: rgba(0,0,0,.85);
+    }
+  }
   /* @media(min-width: 1700px){
     height: 250px;
   } */

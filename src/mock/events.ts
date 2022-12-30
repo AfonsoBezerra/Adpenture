@@ -63,5 +63,13 @@ export const EventsMock: iEvents[] = [
     idDestination: 6,
     idFriends:[],
     image: '/evento6.jpg'
+  },
+  {
+    id: 9,
+    data:'18/01/2023',
+    name: 'Refugio dos rios',
+    idDestination: 6,
+    idFriends:[],
+    image: '/evento6.jpg'
   }
 ]

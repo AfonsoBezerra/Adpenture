@@ -64,7 +64,7 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
             height: 100%;
             border: none;
             border-radius: 10px;
-
+            transition: all .5s;
             ${({isFriend}) => 
                 isFriend ?
                     css`
@@ -76,11 +76,17 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
                         background-color: #FECA05;
                         cursor: pointer;
                         color: black;
+                        transition: all .5s;
+                        :hover{
+                            background-color: #FECA0585;
+                            color: rgba(0,0,0,.85);
+                        }
                    `
             }
             h3{
                 font-size: 13px;
             }
+          
             @media (max-width: 600px){
                 padding:.5rem 1.5rem;
             }

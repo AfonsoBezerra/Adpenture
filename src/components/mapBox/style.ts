@@ -10,6 +10,6 @@ export const MapBoxStyle = styled.div`
         height: 50%;
     }
     @media (max-width: 600px){
-        height: 80%;
+        height: 100%;
     }
 `;
