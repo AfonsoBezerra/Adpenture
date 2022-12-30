@@ -6,6 +6,23 @@ export const EventBoxStyle = styled.div`
   background-color: white;
   border-radius: 10px;
   padding: 2rem;
+  overflow: auto;
+  @media(max-width:600px){
+    height: 550px;
+      &::-webkit-scrollbar {
+      width: 5px;               /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background:  rgba(0,0,0,0.1);       /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,0.3);    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+    }
+
+  }
   .header{
     display: flex;
     justify-content: space-between;

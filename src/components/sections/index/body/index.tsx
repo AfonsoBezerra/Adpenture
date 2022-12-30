@@ -2,6 +2,7 @@
 import BoxFriends from "@components/boxFriends"
 import CarrosselDestination from "@components/carroselDestination"
 import EventBox from "@components/eventBox"
+import Footer from "@components/footer"
 import Header from "@components/header"
 import MapBox from "@components/mapBox"
 import StartContainer from "@components/startAdventury"
@@ -31,6 +32,7 @@ const Body = () => {
           <EventBox />
         </div>
       </section>
+      <Footer />
     </BodyStyle>
   )
 }

@@ -12,7 +12,7 @@ const BoxFriends = () =>  {
         <h5>Você tem <span>46+</span> amigos</h5>
       </div>
       <div className="body">
-        {FriendsMock.slice(0,8).map((friend: iFriends)=> (
+        {FriendsMock.slice(0,10).map((friend: iFriends)=> (
           <FriendInvite isPrime={friend.isPrime} img={friend.img} name={friend.name} isFriend={friend.isFriend} key={friend.id} />
         ))}
       </div>

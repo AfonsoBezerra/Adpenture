@@ -16,7 +16,7 @@ function MyMapComponent({
     });
   });
 
-  return <div ref={ref} id="map" style={{ flexGrow: "1", height: "100%", borderRadius: '10px' }} />;
+  return <div ref={ref} id="map" style={{ flexGrow: "1", height: "100%", borderRadius: '8px' }} />;
 }
 
 export default MyMapComponent;

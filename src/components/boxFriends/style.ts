@@ -4,11 +4,18 @@ export const BoxFriendsStyle = styled.div`
   width: 100%;
   overflow: auto;
   padding: 2rem;
+  height: 100%;
   background-color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 1440px){
+      height: fit-content;
+  }
+  @media (max-width: 600px){
+        height: 400px;
+    }
   &::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
   }
