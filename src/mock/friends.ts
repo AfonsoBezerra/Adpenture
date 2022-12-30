@@ -19,7 +19,7 @@ export const FriendsMock: iFriends[] = [
         id: 3,
         name: 'Meire',
         img: './fakes/fake3.jpg',
-        isFriend: false,
+        isFriend: true,
         isPrime: true
     },
     {

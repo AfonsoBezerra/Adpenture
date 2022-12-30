@@ -24,6 +24,17 @@ export const ProfileStyle = styled.div<ProfileStyleProps>`
     display: flex;
     justify-content: center;
     align-items: center;
+    .howmuch{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 10px;
+      color: #fff;
+    }
     img{
       width: 100%;
       height: 100%;

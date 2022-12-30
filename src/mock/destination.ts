@@ -56,5 +56,19 @@ export const DestinationMock: iDestination[] = [
     localization: 'Chapada, MG',
     image: '/acampamento8.jpg',
     ratting: 4.2
+  },
+  {
+    id: 9,
+    name: 'Glamping da Represa',
+    localization: 'Ibiúna, SP',
+    image: '/acampamento7.webp',
+    ratting: 4.4
+  },
+  {
+    id: 10,
+    name: 'Pedra da Água',
+    localization: 'Chapada, MG',
+    image: '/acampamento8.jpg',
+    ratting: 4.2
   }
 ]

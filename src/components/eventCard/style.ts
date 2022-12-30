@@ -58,7 +58,7 @@ export const EventCardStyle = styled.div`
           text-overflow: ellipsis;
         }
       }
-      .ratting{
+      .friends{
         position: absolute;
         display: flex;
         align-items: center;

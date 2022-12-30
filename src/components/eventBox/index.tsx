@@ -4,6 +4,7 @@ import { EventBoxStyle } from "./style"
 import Image from 'next/image';
 import EventCard from "@components/eventCard";
 import { DestinationMock } from "mock/destination";
+import { FriendsMock } from "mock/friends";
 
 const EventBox = () => {
   return (
@@ -14,12 +15,13 @@ const EventBox = () => {
       </div>
       <div className="cardsEvents">
         {EventsMock.map((event : iEvents) => {
-        const local = DestinationMock.filter(local => {
-            return local.id === event.idDestination
-          })
-          console.log(local, 'local')
+          const local = DestinationMock.filter(local => {
+              return local.id === event.idDestination
+            })
+          const friends = FriendsMock.filter(friends => event.idFriends.includes(friends.id) && friends.isFriend)
+          console.log(friends, 'friends')
           return (
-            <EventCard key={event.id} title={event.name} local={local} image={event.image} />
+            <EventCard key={event.id} title={event.name} friends={friends} local={local} image={event.image} />
           )
         })}
       </div>

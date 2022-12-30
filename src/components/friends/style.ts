@@ -11,7 +11,7 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
     align-items: center;
     .content{
         display: flex;
-        max-width: 55%;
+        max-width: 60%;
         overflow: hidden;
         white-space: nowrap;
         align-items: center;
@@ -81,6 +81,9 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
             h3{
                 font-size: 13px;
             }
+            @media (max-width: 600px){
+                padding:.5rem 1.5rem;
+            }
         }
-    }
+    }  
 `;

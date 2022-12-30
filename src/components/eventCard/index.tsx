@@ -2,15 +2,18 @@ import Image from 'next/image';
 import { PinOutlineIcon, StarSIcon } from "@stylesComponents/icons"
 import { EventCardStyle } from "./style"
 import { iDestination } from 'interfaces/iDestination';
+import { iFriends } from 'interfaces/iFriends';
+import Profile from '@components/profile';
 
 interface EventProps { 
   title: string,
   local: iDestination[],
   ratting?: number,
-  image: string
+  image: string,
+  friends: iFriends[]
 }
 
-const EventCard = ({title, local, ratting,image} : EventProps) =>{
+const EventCard = ({title, local, friends,image} : EventProps) =>{
   const {localization} = local[0]; 
     return (
       <EventCardStyle>
@@ -31,9 +34,13 @@ const EventCard = ({title, local, ratting,image} : EventProps) =>{
               <PinOutlineIcon />
               <span>{localization}</span>
             </div>
-            <div className="ratting">
-              <StarSIcon />
-              <span>{ratting}</span>  
+            <div className="friends">
+             {friends.slice(0,2).map(friend => (
+              <>
+                <Profile key={friend.id} color="#ffd23f" imgPath={friend.img} width="22px"/>
+              </>
+              ))}
+              {friends.length > 2 ? <Profile  color="#705514" howmuch={friends.length - friends.slice(0,2).length} width="22px"/> : ''}
             </div>
           </div>
         </div>
