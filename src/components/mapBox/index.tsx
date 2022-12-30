@@ -6,10 +6,10 @@ import dynamic from "next/dynamic";
 
 const MapBox = () => {
   const [from, setFrom] = useState<number[]>([28.385233, -81.563873]);
-
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY
   return (
     <MapBoxStyle>
-      <Wrapper apiKey={"AIzaSyBZlqvcLIvTJWbkmDBst6d_w-7WxezsTxY"}>
+      <Wrapper apiKey={`${apiKey}`}>
         <MyMapComponent center={{lat: 51.505, lng: -0.09}} zoom={11}/>
       </Wrapper>
     </MapBoxStyle>
