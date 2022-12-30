@@ -33,9 +33,18 @@ export const BodyStyle = styled.section<iBody>`
     .friend-map{
       padding: 0 1rem 1rem 1rem;
       width: 100%;
-      height: 100%;
       display: flex;
       gap: 1rem;
+      .column{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height:100%;
+        gap: 1rem;
+        @media (max-width: 1023px){
+           width: 100%;
+        }
+      }
       @media (max-width: 1023px){
         flex-direction: column;
         justify-content: space-between

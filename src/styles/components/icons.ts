@@ -121,7 +121,7 @@ export const NotificationsIcon = styled(Notifications)`
 export const VipCrownIcon = styled(VipCrown)`
   width: 20px;
   height: 20px;
-  color: yellow;
+  color: #FECA05;
 `
 
 export const InformationCircleIcon = styled(InformationCircle)`

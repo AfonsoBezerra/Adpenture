@@ -14,6 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="/>
         <title>Adventury</title>
       </Head>
       <LayoutProvider>

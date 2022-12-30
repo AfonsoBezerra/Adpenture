@@ -3,6 +3,7 @@ import BoxFriends from "@components/boxFriends"
 import CarrosselDestination from "@components/carroselDestination"
 import EventBox from "@components/eventBox"
 import Header from "@components/header"
+import MapBox from "@components/mapBox"
 import StartContainer from "@components/startAdventury"
 import { useLayoutContextNotification } from "context/notification"
 import { useLayoutContextSide } from "context/SideBar"
@@ -23,7 +24,10 @@ const Body = () => {
         <StartContainer  isSideBar={false}/>
         <CarrosselDestination />
         <div className="friend-map">
-          <BoxFriends />
+          <div className="column">
+            <MapBox />
+            <BoxFriends />
+          </div>
           <EventBox />
         </div>
       </section>

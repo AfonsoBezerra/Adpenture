@@ -1,14 +1,30 @@
 import styled from "styled-components";
 
 export const BoxFriendsStyle = styled.div`
-  width: 60%;
-  height:100%;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
   padding: 2rem;
   background-color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background:  rgba(0,0,0,0.1);       /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+  @media (max-width: 1440px){
+    height: fit-content;
+  }
   .header{
     display: flex;
     flex-direction: row;
@@ -41,10 +57,13 @@ export const BoxFriendsStyle = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
   @media (max-width: 1023px){
       width: 100%;
+  }
+  @media (max-width: 500px){
+      padding: 1.5rem;
   }
 `;

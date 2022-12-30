@@ -11,30 +11,46 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
     align-items: center;
     .content{
         display: flex;
+        max-width: 55%;
+        overflow: hidden;
         white-space: nowrap;
         align-items: center;
         gap: .5rem;
         .container{
+            width: fit-content;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            overflow: hidden;
             h3{
                 margin: 0;
                 padding: 0;
                 font-size: 15px;
                 font-weight: 500;
+                white-space: nowrap;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 @media (max-width:600px){
                     font-size: 13px;
                 }
             }  
             .subtitle{
+                width: fit-content;
                 display: flex;
+                justify-content: start;
                 align-items: center;
                 span{
                     font-weight: 400;
                     color: rgba(0,0,0,.4);
                     font-size: 13px;
-                    margin-right: .2rem;
+                    /* margin-right: .2rem; */
+                    white-space: nowrap;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     @media (max-width:600px){
                         font-size: 11px;
                     }
@@ -46,7 +62,6 @@ export const FriendInviteStyle = styled.div<FriendInviteStyleProps>`
         button{
             padding:.5rem 2rem;
             height: 100%;
-
             border: none;
             border-radius: 10px;
 

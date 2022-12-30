@@ -1,6 +1,7 @@
 import FriendInvite from "@components/friends"
 import { iFriends } from "interfaces/iFriends"
 import { FriendsMock } from "mock/friends"
+import { useEffect, useState } from "react"
 import { BoxFriendsStyle } from "./style"
 
 const BoxFriends = () =>  {
@@ -11,7 +12,7 @@ const BoxFriends = () =>  {
         <h5>Você tem <span>46+</span> amigos</h5>
       </div>
       <div className="body">
-        {FriendsMock.map((friend: iFriends)=> (
+        {FriendsMock.slice(0,7).map((friend: iFriends)=> (
           <FriendInvite isPrime={friend.isPrime} img={friend.img} name={friend.name} isFriend={friend.isFriend} key={friend.id} />
         ))}
       </div>
