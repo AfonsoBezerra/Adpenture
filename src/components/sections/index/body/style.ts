@@ -13,18 +13,18 @@ export const BodyStyle = styled.section<iBody>`
       height: fit-content;
   }
   flex-direction: column;
- 
   position: relative;
-  ${({active}) =>
+  overflow-x: hidden;
+  /* ${({active}) =>
     active ?
     css`
       overflow: hidden;
     `
     :
     css`
-      overflow-x: hidden;
+      
     `
-  }
+  } */
   
 
   .main{

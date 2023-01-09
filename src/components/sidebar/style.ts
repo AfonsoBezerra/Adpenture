@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const SidebarStyle = styled.div`
-  position: fixed;
   z-index: 99;
   width: 20rem;
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ export const SidebarStyle = styled.div`
         cursor: pointer;
         list-style: none;
         display: flex;
-        display: flex;
+
         flex-direction: column;
         gap: .5rem;
         height: auto;
@@ -184,6 +184,7 @@ export const SidebarStyle = styled.div`
 
   @media (max-width: 1359px){
     left: -20rem;
+    position: fixed;
     &.active{
       left: 0;
     }

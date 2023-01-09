@@ -6,6 +6,6 @@ export const ContainerIndex = styled.div`
   display: grid;
   grid-template-columns: 20rem auto;
   @media (max-width: 1359px){
-    grid-template-columns: 0 auto;
+    grid-template-columns: auto;
   }
 `

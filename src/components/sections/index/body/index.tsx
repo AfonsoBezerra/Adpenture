@@ -22,7 +22,7 @@ const Body = () => {
     }}>
       <Header />
       <section className="main">
-        <StartContainer  isSideBar={false}/>
+        <StartContainer isSideBar={false}/>
         <CarrosselDestination />
         <div className="friend-map">
           <div className="column">
