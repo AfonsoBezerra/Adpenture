@@ -13,7 +13,7 @@ const Sidebar = () => {
   const {openNotify, setOpenNotify} = useLayoutContextNotification()
   const router = useRouter();
   return (
-  <SidebarStyle arial-hidden onClick={() => {
+  <SidebarStyle onClick={() => {
     openNotify && setOpenNotify(false)
   }} className={active ? 'active' : ''}>
     <div className="header">

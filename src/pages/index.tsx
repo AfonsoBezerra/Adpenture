@@ -1,4 +1,4 @@
-import Body from "@components/sections/index/body";
+import IndexBody from "@components/sections/index/body";
 import ProfileCard from "@components/sections/index/profile";
 import { ContainerIndex } from "@stylesComponents/ContainertIndex";
 import Sidebar from "../components/sidebar";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <ContainerIndex>
       <Sidebar />
-      <Body />
+      <IndexBody />
       <ProfileCard/>
       {/* <button onClick={() => setTheme(!theme) } >Click me</button> */}
     </ContainerIndex>

@@ -10,7 +10,7 @@ export const BoxFriendsStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media (max-width: 1440px){
+  @media (max-width: 1920px){
       height: fit-content;
   }
   @media (max-width: 600px){

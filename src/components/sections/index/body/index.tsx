@@ -11,11 +11,11 @@ import { useLayoutContextSide } from "context/SideBar"
 import { useContext } from "react"
 import { BodyStyle } from "./style"
 
-const Body = () => {
+const IndexBody = () => {
   const {active,activeProfile,setActive, setProfile} = useLayoutContextSide();
   const {openNotify, setOpenNotify} = useLayoutContextNotification()
   return (
-    <BodyStyle active={active || activeProfile} arial-hidden onClick={() => {
+    <BodyStyle active={active || activeProfile} onClick={() => {
       active && setActive(false)
       activeProfile && setProfile(false)
       openNotify && setOpenNotify(false)
@@ -37,4 +37,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default IndexBody
