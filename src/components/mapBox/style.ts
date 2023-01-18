@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MapBoxStyle = styled.div`
     width: 100%;
-    height:50%;
+    height:40%;
     background-color: white;
     border-radius: 10px;
     padding: 1rem;
