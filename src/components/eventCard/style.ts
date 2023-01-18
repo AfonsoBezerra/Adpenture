@@ -1,7 +1,11 @@
-import { Payment } from '@styled-icons/fluentui-system-regular/Payment';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import { I } from "styled-icons/fa-solid";
 
-export const EventCardStyle = styled.div`
+interface EventProps {
+  length: number;
+}
+
+export const EventCardStyle = styled.div<EventProps>`
   width: auto;
   height: 100%;
   border-radius: 10px;
@@ -59,10 +63,44 @@ export const EventCardStyle = styled.div`
         }
       }
       .friends{
-        position: absolute;
+        position: relative;
         display: flex;
         align-items: center;
         right: 0;
+        .content{
+          position: absolute !important;
+          bottom: 0;
+          right: 0;
+        }
+        ${({length})=> 
+          {
+            if(length == 2) {
+             return css`
+                #friend-0{
+                  right: 1rem;
+                  z-index: 0;
+                }
+                #friend-1{
+                  z-index: 1;
+                }
+              `
+            }else if(length >= 3){
+              return css`
+                #friend-0{
+                  right: 2rem;
+                  z-index: 0;
+                }
+                #friend-1{
+                  right: 1rem;
+                  z-index: 1;
+                }
+                .content-howmuch{
+                  z-index: 2;
+                }
+            `
+            }
+          }
+        }
         span{
           font-size: 12px;
           font-weight: 600;

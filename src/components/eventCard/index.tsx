@@ -16,7 +16,7 @@ interface EventProps {
 const EventCard = ({title, local, friends,image} : EventProps) =>{
   const {localization} = local[0]; 
     return (
-      <EventCardStyle>
+      <EventCardStyle length={friends.length}>
         <div className="image">
           <Image src={image} 
             alt="image" 
@@ -35,12 +35,10 @@ const EventCard = ({title, local, friends,image} : EventProps) =>{
               <span>{localization}</span>
             </div>
             <div className="friends">
-             {friends.slice(0,2).map(friend => (
-              <>
-                <Profile key={friend.id} color="#ffd23f" imgPath={friend.img} width="22px"/>
-              </>
+             {friends.slice(0,2).map((friend, index) => (
+                <Profile key={friend.id} id={`friend-${index}`} className={`content`} color="#ffd23f" imgPath={friend.img} width="22px"/>
               ))}
-              {friends.length > 2 ? <Profile  color="#705514" howmuch={friends.length - friends.slice(0,2).length} width="22px"/> : ''}
+              {friends.length > 2 ? <Profile className="content-howmuch" color="#705514" howmuch={friends.length - friends.slice(0,2).length} width="22px"/> : ''}
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ interface ProfileStyleProps {
 export const ProfileStyle = styled.div<ProfileStyleProps>`
   width: fit-content;
   height: fit-content;
-  padding: 2.5px;
+  padding: calc((2rem / 2) - 14px);
   background-color: ${({componentColor})=> componentColor} ;
   border-radius: 50%;
   display: flex;

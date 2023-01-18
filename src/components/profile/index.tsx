@@ -5,11 +5,13 @@ interface ProfileProps{
   imgPath?: string;
   color: string;
   howmuch?: number;
+  className?: any;
+  id?: any;
 }
 
-const Profile =({imgPath, width, color, howmuch}: ProfileProps) => {
+const Profile =({imgPath, width, color, howmuch, className, id}: ProfileProps) => {
   return (
-    <ProfileStyle componetSize={width} componentColor={color}>
+    <ProfileStyle componetSize={width} className={className} id={id} componentColor={color}>
       <div className="img">
         {imgPath ? <img src={imgPath} alt="pessoa" /> : <div className="howmuch">+{howmuch}</div>}
        
