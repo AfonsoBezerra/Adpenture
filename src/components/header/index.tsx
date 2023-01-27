@@ -19,7 +19,7 @@ const Header = () => {
           <MenuIcon/>
         </button>
       </div>
-      <div className="iconsButtons">
+      <div className="iconsButtons" onClick={() => router.pathname !== '/' ? router.back(): ''}>
         <ArrowIcon  className={router.pathname !== '/' ? 'main': ''} />
       </div>
     </div>

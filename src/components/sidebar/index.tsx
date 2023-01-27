@@ -29,7 +29,7 @@ const Sidebar = () => {
         {
           SideItems.map(items => {
             return (
-              <li key={items.id}>
+              <li key={items.id} onClick={() => router.push(`/${items.ref}`)}>
                 <div className={router.asPath === items.ref ? 'content active': 'content'}>{items.icon} 
                   <span className="text">{items.label}</span>
                 </div>

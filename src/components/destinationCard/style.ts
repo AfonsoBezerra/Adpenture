@@ -28,15 +28,48 @@ export const DestinationCardStyle = styled.div`
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    position: relative;
+    .tooltip{
+        display: none;
+        position: absolute;
+        top: -50%;
+        right: 0;
+        z-index: 9999;
+        .container{
+          position: relative;
+          z-index: 0;
+          .seta{
+            position: absolute;
+            top: -3px;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            transform: rotate(45deg);
+          }
+        }
+    }
     h1{
       font-size: 18px;
       color: rgba(0,0,0,.9);
       white-space: nowrap;
       max-width: 80%;
       -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: vertical; 
       overflow: hidden;
       text-overflow: ellipsis;
+      position: relative;
+      &:hover{
+        ~ .tooltip{
+          background-color: rgba(0,0,0,.9);
+          font-size: 13px;
+          padding: .2rem .4rem;
+          border-radius: 3px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     }
 
     .line{

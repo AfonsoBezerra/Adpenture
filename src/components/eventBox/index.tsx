@@ -19,7 +19,6 @@ const EventBox = () => {
               return local.id === event.idDestination
             })
           const friends = FriendsMock.filter(friends => event.idFriends.includes(friends.id) && friends.isFriend)
-          console.log(friends, 'friends')
           return (
             <EventCard key={event.id} title={event.name} friends={friends} local={local} image={event.image} />
           )

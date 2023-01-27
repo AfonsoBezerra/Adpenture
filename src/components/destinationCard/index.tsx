@@ -23,7 +23,18 @@ const DestinationCard = ({title, localization, ratting,image} : DestinationProps
           </Image>
         </div>
         <div className="description">
-          <h1>{title}</h1>
+          <h1>
+            {title}   
+          </h1>
+          {title.length >= 14 && (
+          <div className="tooltip">
+            {title} 
+            <div className="container">
+              <div className="seta"></div>
+            </div>
+          </div>
+          )}
+
           <div className="line">
             <div className="localization">
               <PinOutlineIcon />
