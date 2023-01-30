@@ -6,7 +6,7 @@ export const MapBoxStyle = styled.div`
     background-color: white;
     border-radius: 10px;
     padding: 1rem;
-    @media (min-width: 1919px){
+    @media (min-width: 1700px){
         height: 100%;
     }
     @media (max-width: 1440px){
